@@ -11,7 +11,7 @@ import { Calendar1Icon } from "lucide-react";
 import { format } from "date-fns";
 
 export default function TodoList() {
-  const [date, setDate] = React.useState<Date | undefined>(new Date());
+  const [date, setDate] = useState<Date | undefined>(new Date());
   const [open, setOpen] = useState<boolean>(false);
   return (
     <div>
