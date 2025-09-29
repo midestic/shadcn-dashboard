@@ -1,3 +1,4 @@
+import { AppLineChart } from "@/components/AppLineChart";
 import CardList from "@/components/CardList";
 import EditUser from "@/components/EditUser";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -168,17 +169,25 @@ export default function SingleUserpage() {
           </div>
         </div>
         <div className="w-full xl:w-2/3 space-y-6">
-          <div className="bg-primary-foreground p-4 rounded-lg">
-            <div className="">
-              <Avatar>
+          <div className="bg-primary-foreground p-4 rounded-lg space-y-2">
+            <div className="flex items-center gap-2">
+              <Avatar className="size-12">
                 <AvatarImage src="https://avatara.githubusercontent.com/u/1486366" />
                 <AvatarFallback>UB</AvatarFallback>
               </Avatar>
 
-              <h1>John Doe</h1>
+              <h1 className="text-lg font-semibold">John Doe</h1>
             </div>
+            <p className="text-sm text-muted-foreground">
+              Bala blu army down-payment tia-tia army 50million line blu
+              different bala super army bala army different bulaba tia-tia
+              down-payment super
+            </p>
           </div>
-          <div className="bg-primary-foreground p-4 rounded-lg">Chart</div>
+          <div className="bg-primary-foreground p-4 rounded-lg">
+            <h1 className="text-xl font-semibold">User Activity</h1>
+            <AppLineChart />
+          </div>
         </div>
       </div>
     </div>
